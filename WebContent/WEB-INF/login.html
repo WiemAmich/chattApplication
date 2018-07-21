@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+    <h2>Login</h2>
+    <form name="form" ng-submit="vm.login()" role="form">
+        <div >
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" class="form-control" ng-model="vm.username" required />
+           
+        </div>
+        <div >
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" class="form-control" ng-model="vm.password" required />
+            
+        </div>
+        <div>
+            <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" >Login</button>
+
+            <a href="#!/register" >Register</a>
+        </div>
+    </form>
+
+
+    <script src="//code.angularjs.org/1.6.0/angular.min.js"></script>
+    <script src="//code.angularjs.org/1.6.0/angular-route.min.js"></script>
+    <script src="//code.angularjs.org/1.6.0/angular-cookies.min.js"></script>
+
+    </body>
+</html>
